@@ -1,0 +1,52 @@
+body {
+    font-family: system-ui, sans-serif;
+  }
+  input, select {
+    min-width: 180px;
+  }
+  .platinado {
+    border: 2px solid gold;
+    background-color: #fff8dc; 
+    box-shadow: 0 0 10px gold;
+  }
+  .selo-platina {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(135deg, #f7f7f7, gold, #f7f7f7);
+    color: black;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    box-shadow: 0 0 8px gold;
+    z-index: 10;
+    animation: brilhar 2.5s infinite linear;
+    border: 1px solid #b29600;
+  }
+  
+  @keyframes brilhar {
+    0% {
+      box-shadow: 0 0 6px gold;
+      transform: rotate(-1deg);
+    }
+    50% {
+      box-shadow: 0 0 20px gold;
+      transform: rotate(1deg);
+    }
+    100% {
+      box-shadow: 0 0 6px gold;
+      transform: rotate(-1deg);
+    }
+  }
+  
+  
+  .trofeu-platina {
+    display: block;
+    margin: 4px auto 0;
+    width: 64px; 
+    height: auto;
+  }
+  .card {
+    position: relative;
+  }
