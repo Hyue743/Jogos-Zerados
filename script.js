@@ -7,7 +7,7 @@ const jogos = [
         subgenero: "Beat 'em up",
         tempo: 60,
         nota: 10,
-        plataforma: "Steam Deck",
+        plataforma: "SNES: Steam Deck",
         conquistas: "22/84"
       },
       {
@@ -18,7 +18,7 @@ const jogos = [
         subgenero: "Luta 2D",
         tempo: 540,
         nota: 8.2,
-        plataforma: "Steam Deck",
+        plataforma: "Steam: Steam Deck",
         conquistas: "3/47"
       },
       {
@@ -29,7 +29,7 @@ const jogos = [
         subgenero: "Roguelite",
         tempo: 1320,
         nota: 9.7,
-        plataforma: "Steam Deck",
+        plataforma: "Switch: Steam Deck",
         conquistas: "NA"
       },
       {
@@ -40,7 +40,7 @@ const jogos = [
         subgenero: "Aventura psicológica",
         tempo: 560,
         nota: 7,
-        plataforma: "PC",
+        plataforma: "XBOX Game Pass: PC",
         conquistas: "7/11"
       },
       {
@@ -51,7 +51,7 @@ const jogos = [
         subgenero: "Puzzle",
         tempo: 11,
         nota: 6,
-        plataforma: "PC",
+        plataforma: "Steam: PC",
         conquistas: "100/100"
       },
       {
@@ -62,7 +62,7 @@ const jogos = [
         subgenero: "Soulslike",
         tempo: 565,
         nota: 9,
-        plataforma: "PC",
+        plataforma: "XBOX Game Pass: PC",
         conquistas: "27/42"
       },
       {
@@ -73,7 +73,7 @@ const jogos = [
         subgenero: "Beat 'em up",
         tempo: 300,
         nota: 6,
-        plataforma: "Steam Deck",
+        plataforma: "SNES: Steam Deck",
         conquistas: "5/12"
       },
       {
@@ -84,7 +84,7 @@ const jogos = [
         subgenero: "Talkshow",
         tempo: 30,
         nota: 7,
-        plataforma: "Steam Deck",
+        plataforma: "Genesis: Steam Deck",
         conquistas: "21/21"
       },
       {
@@ -95,7 +95,7 @@ const jogos = [
       subgenero: "Talkshow",
       tempo: 35,
       nota: 7,
-      plataforma: "Steam Deck",
+      plataforma: "Genesis: Steam Deck",
       conquistas: "8/14"
       },
       {
@@ -106,7 +106,7 @@ const jogos = [
         subgenero: "RPG de mundo aberto",
         tempo: 9180,
         nota: 9.5,
-        plataforma: "Steam Deck/PC",
+        plataforma: "Steam: Steam Deck/PC",
         conquistas: "75/75"
         },
     {
@@ -117,7 +117,7 @@ const jogos = [
         subgenero: "Puzzle arena",
         tempo: 150,
         nota: 10,
-        plataforma: "Steam Deck",
+        plataforma: "SNES: Steam Deck",
         conquistas: "19/37"
     },
         {
@@ -128,7 +128,7 @@ const jogos = [
         subgenero: "Roguelite/Bullet Hell",
         tempo: 2685,
         nota: 8,
-        plataforma: "Steam Deck/PC",
+        plataforma: "EPIC: Steam Deck/PC",
         conquistas: "169/220"
         },
     {
@@ -139,7 +139,7 @@ const jogos = [
         subgenero: "Drama interativo",
         tempo: 720,
         nota: 10,
-        plataforma: "PC",
+        plataforma: "Steam: PC",
         conquistas: "26/48"
       },
       {
@@ -150,7 +150,7 @@ const jogos = [
         subgenero: "Roguelite/Gestão de loja",
         tempo: 1056,
         nota: 7.5,
-        plataforma: "Steam Deck",
+        plataforma: "GOG: Steam Deck",
         conquistas: "NA"
       },      
     {
@@ -161,7 +161,7 @@ const jogos = [
       subgenero: "Metroidvania",
       tempo: 669,
       nota: 10,
-      plataforma: "PC",
+      plataforma: "EA: PC",
       conquistas: "19/19"
     }
   ];
@@ -177,7 +177,6 @@ const jogos = [
       const card = document.createElement("div");
       card.className = "card";
   
-      // Se jogo for platinado
       if (jogo.conquistas.includes("/")) {
         const [feitas, total] = jogo.conquistas.split("/").map(Number);
         if (feitas === total) {
