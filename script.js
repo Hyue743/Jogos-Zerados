@@ -156,7 +156,7 @@ const jogos = [
     {
       nome: "Tales of Kenzera: Zau",
       lancamento: 2024,
-      concluido: "2024-02-10",
+      concluido: "2025-04-05",
       genero: "Ação/Aventura",
       subgenero: "Metroidvania",
       tempo: 669,
