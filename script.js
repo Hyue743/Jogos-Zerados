@@ -129,7 +129,7 @@ const jogos = [
         tempo: 2685,
         nota: 8,
         plataforma: "EPIC: Steam Deck/PC",
-        conquistas: "169/220"
+        conquistas: "170/220"
         },
     {
         nome: "Detroit: Become Human",
@@ -163,7 +163,19 @@ const jogos = [
       nota: 10,
       plataforma: "EA: PC",
       conquistas: "19/19"
-    }
+    },
+    {
+      nome: "Final Fight 3",
+      lancamento: 1995,
+      concluido: "2025-04-21",
+      genero: "Ação",
+      subgenero: "Beat 'em up",
+      tempo: 57,
+      nota: 6.5,
+      plataforma: "SNES: Steam Deck",
+      conquistas: "18/57"
+    },
+
   ];
   
   function renderizarJogos(lista) {
