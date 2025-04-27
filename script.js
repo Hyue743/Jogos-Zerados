@@ -175,6 +175,18 @@ const jogos = [
       plataforma: "SNES: Steam Deck",
       conquistas: "18/57"
     },
+    ,
+   {
+      nome: "BioShock Remastered",
+      lancamento: 2016,
+      concluido: "2025-04-27",
+      genero: "FPS",
+      subgenero: "FPS com elementos de RPG",
+      tempo: 996,
+      nota: 8,
+      plataforma: "GOG: PC",
+      conquistas: "26/65"
+    },
 
   ];
   
