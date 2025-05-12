@@ -187,6 +187,17 @@ const jogos = [
       plataforma: "GOG: PC",
       conquistas: "26/65"
     },
+    {
+      nome: "Balatro",
+      lancamento: 2024,
+      concluido: "2025-05-11",
+      genero: "Estratégia",
+      subgenero: "Roguelite/Deckbuilder",
+      tempo: 234,
+      nota: 8,
+      plataforma: "XBOX: PC",
+      conquistas: "6/31"
+    },
 
   ];
   
