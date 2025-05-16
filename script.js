@@ -193,10 +193,10 @@ const jogos = [
       concluido: "2025-05-11",
       genero: "Estratégia",
       subgenero: "Roguelite/Deckbuilder",
-      tempo: 234,
+      tempo: 744,
       nota: 8,
       plataforma: "XBOX: PC",
-      conquistas: "6/31"
+      conquistas: "10/31"
     },
 
   ];
