@@ -1,4 +1,5 @@
-const jogos = [
+const jogos = {
+2024: [
     {
         nome: "Marvel War of the gems",
         lancamento: 1996,
@@ -131,6 +132,8 @@ const jogos = [
         plataforma: "EPIC: Steam Deck/PC",
         conquistas: "170/220"
         },
+      ],
+      2025: [
     {
         nome: "Detroit: Become Human",
         lancamento: 2019,
@@ -193,13 +196,24 @@ const jogos = [
       concluido: "2025-05-11",
       genero: "Estratégia",
       subgenero: "Roguelite/Deckbuilder",
-      tempo: 744,
+      tempo: 1584,
       nota: 8,
       plataforma: "XBOX: PC",
-      conquistas: "10/31"
+      conquistas: "14/31"
     },
-
-  ];
+    {
+      nome: "Asura's Wrath",
+      lancamento: 2012,
+      concluido: "2025-05-25",
+      genero: "Ação",
+      subgenero: "Anime interativo",
+      tempo: 340,
+      nota: 6,
+      plataforma: "XBOX360: XBOX One X",
+      conquistas: "28/53"
+    },
+    ]
+};
   
   function renderizarJogos(lista) {
     const container = document.getElementById("jogosContainer");
@@ -254,31 +268,37 @@ const jogos = [
       container.appendChild(div);
     });
   }
-  
-  function filtrarJogos() {
-    const ano = document.getElementById("filtroLancamento").value;
+function filtrarJogos() {
+    const anoSelecionado = document.getElementById("filtroLancamento").value;
     const nota = document.getElementById("filtroNota").value;
     const tempo = document.getElementById("filtroTempo").value;
-  
-    let filtrados = jogos.slice();
-  
-    if (ano !== "todos") {
-      filtrados = filtrados.filter(j => j.lancamento == ano);
+    const jogosContainer = document.getElementById("jogosContainer");
+
+    jogosContainer.innerHTML = ""; // Limpa a lista atual
+
+    let filtrados = [];
+
+    if (anoSelecionado === "todos") {
+        for (const ano in jogos) {
+            filtrados = filtrados.concat(jogos[ano] || []); // Garante que anos vazios não quebram
+        }
+    } else {
+        filtrados = jogos[anoSelecionado] || []; // Pegando apenas os jogos do ano selecionado
     }
-  
+
     if (nota !== "todas") {
-      const notaMin = parseFloat(nota);
-      filtrados = filtrados.filter(j => j.nota >= notaMin);
+        const notaMin = parseFloat(nota);
+        filtrados = filtrados.filter(j => j.nota >= notaMin);
     }
-  
+
     if (tempo === "curto") {
-      filtrados.sort((a, b) => a.tempo - b.tempo);
+        filtrados.sort((a, b) => a.tempo - b.tempo);
     } else if (tempo === "longo") {
-      filtrados.sort((a, b) => b.tempo - a.tempo);
+        filtrados.sort((a, b) => b.tempo - a.tempo);
     }
-  
+
     renderizarJogos(filtrados);
-  }
+}
   
   document.getElementById("filtroLancamento").addEventListener("change", filtrarJogos);
   document.getElementById("filtroNota").addEventListener("change", filtrarJogos);
@@ -312,31 +332,37 @@ const jogos = [
     document.getElementById("adicionarJogo").reset();
     filtrarJogos();
   });
-  function popularFiltroNota() {
+function popularFiltroNota() {
     const filtro = document.getElementById("filtroNota");
-    const notasUnicas = [...new Set(jogos.map(j => j.nota))].sort((a, b) => b - a);
-  
+    let notasUnicas = new Set();
+
+    for (const ano in jogos) {
+        jogos[ano].forEach(jogo => notasUnicas.add(jogo.nota));
+    }
+
+    const notasOrdenadas = [...notasUnicas].sort((a, b) => b - a);
     filtro.innerHTML = '<option value="todas">Todas</option>';
-    notasUnicas.forEach(nota => {
-      const option = document.createElement("option");
-      option.value = nota;
-      option.textContent = nota;
-      filtro.appendChild(option);
+
+    notasOrdenadas.forEach(nota => {
+        const option = document.createElement("option");
+        option.value = nota;
+        option.textContent = nota;
+        filtro.appendChild(option);
     });
-  }
-  function popularFiltroLancamento() {
+}
+function popularFiltroLancamento() {
     const filtro = document.getElementById("filtroLancamento");
-    const anosUnicos = [...new Set(jogos.map(j => j.lancamento))].sort((a, b) => b - a);
-  
+    const anosUnicos = Object.keys(jogos).sort((a, b) => b - a);
+
     filtro.innerHTML = '<option value="todos">Todos</option>';
     anosUnicos.forEach(ano => {
-      const option = document.createElement("option");
-      option.value = ano;
-      option.textContent = ano;
-      filtro.appendChild(option);
+        const option = document.createElement("option");
+        option.value = ano;
+        option.textContent = ano;
+        filtro.appendChild(option);
     });
-  }
+}
   
   popularFiltroLancamento();
   popularFiltroNota();
-  renderizarJogos(jogos);
+  renderizarJogos(jogos[2024]); // Mostra os jogos de 2024 ao carregar a página;
