@@ -212,6 +212,17 @@ const jogos = {
       plataforma: "XBOX360: XBOX One X",
       conquistas: "28/53"
     },
+    {
+      nome: "The Elder Scrolls IV: Oblivion Remastered",
+      lancamento: 2025,
+      concluido: "2025-05-29",
+      genero: "RPG",
+      subgenero: "RPG de mundo aberto",
+      tempo: 3505,
+      nota: 8,
+      plataforma: "PC",
+      conquistas: "35/60"
+    },
     ]
 };
   
