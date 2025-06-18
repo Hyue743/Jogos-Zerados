@@ -220,8 +220,19 @@ const jogos = {
       subgenero: "RPG de mundo aberto",
       tempo: 3505,
       nota: 8,
-      plataforma: "PC",
+      plataforma: "XBOX: PC",
       conquistas: "35/60"
+    },
+    {
+      nome: "Clair Obscur: Expedition 33",
+      lancamento: 2025,
+      concluido: "2025-06-17",
+      genero: "RPG",
+      subgenero: "RPG de turnos com mecânicas em tempo real",
+      tempo: 3054,
+      nota: 10,
+      plataforma: "XBOX: PC",
+      conquistas: "47/55"
     },
     ]
 };
