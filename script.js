@@ -1,6 +1,159 @@
 const jogos = {
+  2017: [
+     {
+        nome: "Castlevania: Lords of Shadow 2",
+        lancamento: 2014,
+        concluido: "2017-04-22",
+        genero: "Ação",
+        subgenero: "Hack and Slash",
+        tempo: 1572,
+        nota: 6.9,
+        plataforma: "Steam: PC",
+        conquistas: "24/56"
+      },
+     {
+        nome: "Age of Mythology: Extended Edition",
+        lancamento: 2014,
+        concluido: "2017-05-24",
+        genero: "RTS",
+        subgenero: "Construção de império",
+        tempo: 1974,
+        nota: 10,
+        plataforma: "Steam: PC",
+        conquistas: "NA"
+      },
+     {
+        nome: "Mortal Kombat X",
+        lancamento: 2015,
+        concluido: "2017-10-18",
+        genero: "Luta",
+        subgenero: "Luta em 2.5D",
+        tempo: 630,
+        nota: 7,
+        plataforma: "Steam: PC",
+        conquistas: "13/73"
+      },
+  ],
+  2018: [
+     {
+        nome: "The Witcher 3: Wild Hunt - Blood and Wine",
+        lancamento: 2016,
+        concluido: "2018-07-07",
+        genero: "RPG",
+        subgenero: "RPG de mundo aberto",
+        tempo: 11028,
+        nota: 10,
+        plataforma: "Steam: PC",
+        conquistas: "41/78"
+      },
+  ],
+  2020: [
+     {
+        nome: "Naruto Shippuden: Ultimate Ninja Storm 4",
+        lancamento: 2016,
+        concluido: "2020-02-11",
+        genero: "Luta",
+        subgenero: "Arena Fighter cinematográfico",
+        tempo: 1512,
+        nota: 8,
+        plataforma: "Steam: PC",
+        conquistas: "20/53"
+      },
+     {
+        nome: "Forza Horizon 4",
+        lancamento: 2020,
+        concluido: "2020-12-27",
+        genero: "Corrida",
+        subgenero: "Mundo aberto/Arcade de simulação",
+        tempo: 1931,
+        nota: 9,
+        plataforma: "XBOX: PC",
+        conquistas: "22/178"
+      },
+     {
+        nome: "GreedFall",
+        lancamento: 2020,
+        concluido: "2020-12-29",
+        genero: "RPG",
+        subgenero: "RPG de ação narrativo",
+        tempo: 2111,
+        nota: 8,
+        plataforma: "XBOX: PC",
+        conquistas: "22/178"
+      },
+],
+2021: [
+     {
+        nome: "The Medium",
+        lancamento: 2021,
+        concluido: "2021-02-15",
+        genero: "Terror",
+        subgenero: "Terror psicológico",
+        tempo: 568,
+        nota: 7.8,
+        plataforma: "XBOX: PC",
+        conquistas: "32/39"
+      },
+     {
+        nome: "A Plague Tale: Innocence",
+        lancamento: 2019,
+        concluido: "2021-03-19",
+        genero: "Aventura",
+        subgenero: "Stealth cinematográfico",
+        tempo: 749,
+        nota: 8.1,
+        plataforma: "XBOX: PC",
+        conquistas: "22/35"
+      },
+     {
+        nome: "Code Vein",
+        lancamento: 2019,
+        concluido: "2021-07-27",
+        genero: "RPG",
+        subgenero: "Soulslike anime",
+        tempo: 1850,
+        nota: 8.7,
+        plataforma: "XBOX: PC",
+        conquistas: "28/43"
+      },
+     {
+        nome: "Hades",
+        lancamento: 2019,
+        concluido: "2021-09-01",
+        genero: "Ação/RPG",
+        subgenero: "Roguelite",
+        tempo: 3359,
+        nota: 9.7,
+        plataforma: "XBOX: PC",
+        conquistas: "25/49"
+      },
+],      
+2022:[
+     {
+        nome: "Dragon Quest XI S: Echos of an Elusive Age - Definitive Edition",
+        lancamento: 2019,
+        concluido: "2022-04-09",
+        genero: "RPG",
+        subgenero: "JRPG",
+        tempo: 3391,
+        nota: 10,
+        plataforma: "XBOX: PC",
+        conquistas: "33/57"
+      },
+     {
+        nome: "Bloodstained: Ritual of the Night",
+        lancamento: 2019,
+        concluido: "2022-11-15",
+        genero: "Ação/Plataforma",
+        subgenero: "Metroidvania",
+        tempo: 1338,
+        nota: 8.6,
+        plataforma: "Steam: PC",
+        conquistas: "32/57"
+      },
+],
 2024: [
-    {
+     {
         nome: "Marvel War of the gems",
         lancamento: 1996,
         concluido: "2024-05-1",
@@ -291,35 +444,35 @@ const jogos = {
     });
   }
 function filtrarJogos() {
-    const anoSelecionado = document.getElementById("filtroLancamento").value;
-    const nota = document.getElementById("filtroNota").value;
-    const tempo = document.getElementById("filtroTempo").value;
-    const jogosContainer = document.getElementById("jogosContainer");
+  const anoSelecionado = document.getElementById("filtroLancamento").value;
+  const nota = document.getElementById("filtroNota").value;
+  const tempo = document.getElementById("filtroTempo").value;
+  const jogosContainer = document.getElementById("jogosContainer");
 
-    jogosContainer.innerHTML = ""; // Limpa a lista atual
+  jogosContainer.innerHTML = ""; // Limpa a lista atual
 
-    let filtrados = [];
+  let filtrados = [];
 
-    if (anoSelecionado === "todos") {
-        for (const ano in jogos) {
-            filtrados = filtrados.concat(jogos[ano] || []); // Garante que anos vazios não quebram
-        }
-    } else {
-        filtrados = jogos[anoSelecionado] || []; // Pegando apenas os jogos do ano selecionado
+  if (anoSelecionado === "todos") {
+    for (const ano in jogos) {
+      filtrados = filtrados.concat(jogos[ano] || []);
     }
+  } else {
+    filtrados = jogos[anoSelecionado] || [];
+  }
 
-    if (nota !== "todas") {
-        const notaMin = parseFloat(nota);
-        filtrados = filtrados.filter(j => j.nota >= notaMin);
-    }
+  if (nota !== "todas") {
+    const notaMin = parseFloat(nota);
+    filtrados = filtrados.filter(j => Number(j.nota.toFixed(2)) === Number(notaMin.toFixed(2)));
+  }
 
-    if (tempo === "curto") {
-        filtrados.sort((a, b) => a.tempo - b.tempo);
-    } else if (tempo === "longo") {
-        filtrados.sort((a, b) => b.tempo - a.tempo);
-    }
+  if (tempo === "curto") {
+    filtrados.sort((a, b) => a.tempo - b.tempo);
+  } else if (tempo === "longo") {
+    filtrados.sort((a, b) => b.tempo - a.tempo);
+  }
 
-    renderizarJogos(filtrados);
+  renderizarJogos(filtrados);
 }
   
   document.getElementById("filtroLancamento").addEventListener("change", filtrarJogos);
