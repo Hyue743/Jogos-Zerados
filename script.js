@@ -186,6 +186,17 @@ const jogos = {
         plataforma: "Steam: PC",
         conquistas: "32/57"
       },
+     {
+        nome: "Super Mario 3D Land",
+        lancamento: 2011,
+        concluido: "2022-12-29",
+        genero: "Plataforma",
+        subgenero: "Plataforma 3D linear",
+        tempo: 1322,
+        nota: 9.5,
+        plataforma: "3DS",
+        conquistas: "NA"
+      },
 ],
 2024: [
      {
@@ -421,6 +432,17 @@ const jogos = {
       nota: 10,
       plataforma: "XBOX: PC",
       conquistas: "47/55"
+    },
+    {
+      nome: "Mario Kart 8 Deluxe",
+      lancamento: 2017,
+      concluido: "2025-06-29",
+      genero: "Corrida",
+      subgenero: "Kart racing arcade",
+      tempo: 315,
+      nota: 10,
+      plataforma: "Switch: Steam Deck",
+      conquistas: "NA"
     },
     ]
 };
