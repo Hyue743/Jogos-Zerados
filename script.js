@@ -33,6 +33,17 @@ const jogos = {
         plataforma: "Steam: PC",
         conquistas: "13/73"
       },
+{
+        nome: "Watch Dogs",
+        lancamento: 2014,
+        concluido: "2017-11-26",
+        genero: "Ação/Aventura",
+        subgenero: "Mundo aberto",
+        tempo: 1200,
+        nota: 6.5,
+        plataforma: "Ubisoft Connect: PC",
+        conquistas: "6/49"
+      },
   ],
   2018: [
      {
@@ -45,6 +56,19 @@ const jogos = {
         nota: 10,
         plataforma: "Steam: PC",
         conquistas: "41/78"
+      },
+    ],
+  2019:[
+     {
+        nome: "Assassin's Creed Origins",
+        lancamento: 2017,
+        concluido: "2019-05-09",
+        genero: "Ação/Aventura",
+        subgenero: "RPG de mundo aberto",
+        tempo: 3202,
+        nota: 9.5,
+        plataforma: "Ubisoft Connect: PC",
+        conquistas: "31/67"
       },
   ],
   2020: [
@@ -60,8 +84,19 @@ const jogos = {
         conquistas: "20/53"
       },
      {
+        nome: "Assassin's Creed Odyssey",
+        lancamento: 2017,
+        concluido: "2020-09-02",
+        genero: "Ação/Aventura",
+        subgenero: "RPG de mundo aberto",
+        tempo: 6700,
+        nota: 10,
+        plataforma: "Ubisoft Connect: PC",
+        conquistas: "73/93"
+      },
+     {
         nome: "Forza Horizon 4",
-        lancamento: 2020,
+        lancamento: 2018,
         concluido: "2020-12-27",
         genero: "Corrida",
         subgenero: "Mundo aberto/Arcade de simulação",
@@ -72,7 +107,7 @@ const jogos = {
       },
      {
         nome: "GreedFall",
-        lancamento: 2020,
+        lancamento: 2019,
         concluido: "2020-12-29",
         genero: "RPG",
         subgenero: "RPG de ação narrativo",
