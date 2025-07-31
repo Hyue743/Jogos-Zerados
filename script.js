@@ -444,6 +444,17 @@ const jogos = {
       plataforma: "Switch: Steam Deck",
       conquistas: "NA"
     },
+    {
+      nome: "Lost in Random: The Eternal Die",
+      lancamento: 2025,
+      concluido: "2025-07-31",
+      genero: "Ação/RPG",
+      subgenero: "Roguelite",
+      tempo: 528,
+      nota: 5.5,
+      plataforma: "XBOX: PC",
+      conquistas: "24/41"
+    },
     ]
 };
   
