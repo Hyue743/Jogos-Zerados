@@ -517,7 +517,7 @@ function filtrarJogos() {
   const tempo = document.getElementById("filtroTempo").value;
   const jogosContainer = document.getElementById("jogosContainer");
 
-  jogosContainer.innerHTML = ""; // Limpa a lista atual
+  jogosContainer.innerHTML = ""; 
 
   let filtrados = [];
 
@@ -608,4 +608,4 @@ function popularFiltroLancamento() {
   
   popularFiltroLancamento();
   popularFiltroNota();
-  renderizarJogos(jogos[2024]); // Mostra os jogos de 2024 ao carregar a página;
+  renderizarJogos(jogos[2025]); // Mostra os jogos de 2024 ao carregar a página;
