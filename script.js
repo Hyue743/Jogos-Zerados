@@ -141,6 +141,17 @@ const jogos = {
         conquistas: "22/35"
       },
      {
+        nome: "Cyberpunk 2077",
+        lancamento: 2020,
+        concluido: "2021-06-01",
+        genero: "RPG de ação",
+        subgenero: "Mundo aberto futurista",
+        tempo: 2948,
+        nota: 9.0,
+        plataforma: "GOG: PC",
+        conquistas: "20/44"
+      },
+     {
         nome: "Code Vein",
         lancamento: 2019,
         concluido: "2021-07-27",
@@ -197,7 +208,20 @@ const jogos = {
         plataforma: "3DS",
         conquistas: "NA"
       },
-],
+],      
+2023:[
+  {
+        nome: "Hogwarts Legacy",
+        lancamento: 2023,
+        concluido: "2023-06-07",
+        genero: "RPG de ação",
+        subgenero: "Mundo aberto",
+        tempo: 2873,
+        nota: 9.5,
+        plataforma: "Epic: PC",
+        conquistas: "25/45"
+      },
+  ],
 2024: [
      {
         nome: "Marvel War of the gems",
