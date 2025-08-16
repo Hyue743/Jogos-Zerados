@@ -479,6 +479,17 @@ const jogos = {
       plataforma: "XBOX: PC",
       conquistas: "24/41"
     },
+    {
+      nome: "Dante's Inferno",
+      lancamento: 2010,
+      concluido: "2025-08-16",
+      genero: "Ação",
+      subgenero: "Hack and slash",
+      tempo: 417,
+      nota: 7,
+      plataforma: "XBOX360: XBOX One X",
+      conquistas: "28/54"
+    },
     ]
 };
   
