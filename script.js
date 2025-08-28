@@ -490,6 +490,17 @@ const jogos = {
       plataforma: "XBOX360: XBOX One X",
       conquistas: "28/54"
     },
+    {
+      nome: "Resident Evil: Village",
+      lancamento: 2021,
+      concluido: "2025-08-26",
+      genero: "Survival horror",
+      subgenero: "Horror em primeira pessoa",
+      tempo: 694,
+      nota: 9,
+      plataforma: "XBOX One X",
+      conquistas: "24/56"
+    },
     ]
 };
   
