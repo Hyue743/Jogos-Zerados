@@ -501,6 +501,17 @@ const jogos = {
       plataforma: "XBOX One X",
       conquistas: "24/56"
     },
+    {
+      nome: "Assassin's Creed Mirage",
+      lancamento: 2023,
+      concluido: "2025-09-26",
+      genero: "Ação/Aventura",
+      subgenero: "Stealth",
+      tempo: 1369,
+      nota: 4.5,
+      plataforma: "XBOX One X",
+      conquistas: "27/50"
+    },
     ]
 };
   
