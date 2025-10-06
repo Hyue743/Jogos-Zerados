@@ -512,6 +512,17 @@ const jogos = {
       plataforma: "XBOX One X",
       conquistas: "27/50"
     },
+    {
+      nome: "Little Nightmares II",
+      lancamento: 2021,
+      concluido: "2025-10-05",
+      genero: "Aventura",
+      subgenero: "Terror psicológico/plataforma puzzle",
+      tempo: 390,
+      nota: 7.7,
+      plataforma: "XBOX: PC",
+      conquistas: "7/35"
+    },
     ]
 };
   
