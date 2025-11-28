@@ -502,6 +502,17 @@ const jogos = {
       conquistas: "24/56"
     },
     {
+      nome: "EA FC 25",
+      lancamento: 2024,
+      concluido: "2025-10-14",
+      genero: "Esporte",
+      subgenero: "Futebol",
+      tempo: 11551,
+      nota: 7.5,
+      plataforma: "XBOX One X",
+      conquistas: "21/39"
+    },
+    {
       nome: "Assassin's Creed Mirage",
       lancamento: 2023,
       concluido: "2025-09-26",
