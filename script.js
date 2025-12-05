@@ -524,15 +524,15 @@ const jogos = {
       conquistas: "27/50"
     },
     {
-      nome: "Little Nightmares II",
-      lancamento: 2021,
-      concluido: "2025-10-05",
-      genero: "Aventura",
-      subgenero: "Terror psicológico/plataforma puzzle",
-      tempo: 390,
-      nota: 7.7,
-      plataforma: "XBOX: PC",
-      conquistas: "7/35"
+      nome: "Marvel Cosmic Invasion",
+      lancamento: 2025,
+      concluido: "2025-12-04",
+      genero: "Ação",
+      subgenero: "Beat 'em up",
+      tempo: 463,
+      nota: 8,
+      plataforma: "XBOX: PC/Xbox One X/Steam Deck",
+      conquistas: "12/35"
     },
     ]
 };
