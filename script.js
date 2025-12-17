@@ -543,7 +543,7 @@ const jogos = {
       tempo: 463,
       nota: 8,
       plataforma: "XBOX: PC/Xbox One X/Steam Deck",
-      conquistas: "12/35"
+      conquistas: "15/35"
     },
     {
       nome: "Gears of War: Reloaded",
