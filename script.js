@@ -545,6 +545,17 @@ const jogos = {
       plataforma: "XBOX: PC/Xbox One X/Steam Deck",
       conquistas: "12/35"
     },
+    {
+      nome: "Gears of War: Reloaded",
+      lancamento: 2025,
+      concluido: "2025-12-16",
+      genero: "Ação",
+      subgenero: "Shooter em terceira pessoa",
+      tempo: 562,
+      nota: 7,
+      plataforma: "XBOX: Steam Deck (nuvem)",
+      conquistas: "28/56"
+    },
     ]
 };
   
