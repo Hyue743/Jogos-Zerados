@@ -556,6 +556,19 @@ const jogos = {
       plataforma: "XBOX: Steam Deck (nuvem)",
       conquistas: "28/56"
     },
+    ],
+    2026: [
+   {
+      nome: "Elden Ring",
+      lancamento: 2022,
+      concluido: "2026-01-07",
+      genero: "RPG",
+      subgenero: "Soulslike (mundo aberto)",
+      tempo: 6480,
+      nota: 10,
+      plataforma: "XBOX One X",
+      conquistas: "42/42"
+    },
     ]
 };
   
@@ -709,4 +722,4 @@ function popularFiltroLancamento() {
   
   popularFiltroLancamento();
   popularFiltroNota();
-  renderizarJogos(jogos[2025]); // Mostra os jogos de 2024 ao carregar a página;
+  renderizarJogos(jogos[2026]); // Mostra os jogos de 2026 ao carregar a página;
