@@ -569,6 +569,17 @@ const jogos = {
       plataforma: "XBOX One X",
       conquistas: "42/42"
     },
+    {
+      nome: "Mortal Kombat 1",
+      lancamento: 2023,
+      concluido: "2026-01-07",
+      genero: "Luta",
+      subgenero: "Luta 2.5D",
+      tempo: 386,
+      nota: 6.5,
+      plataforma: "Steam Deck (nuvem)",
+      conquistas: "3/50"
+    },
     ]
 };
   
