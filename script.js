@@ -580,6 +580,17 @@ const jogos = {
       plataforma: "Steam Deck (nuvem)",
       conquistas: "3/50"
     },
+    {
+      nome: "RE 2 Remake (Leon)",
+      lancamento: 2019,
+      concluido: "2026-01-12",
+      genero: "Ação/Aventura",
+      subgenero: "Shooter de terror em terceira pessoa",
+      tempo: 467,
+      nota: 7.7,
+      plataforma: "XBOX One X",
+      conquistas: "27/44"
+    },
     ]
 };
   
