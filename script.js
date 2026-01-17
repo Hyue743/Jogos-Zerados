@@ -586,10 +586,10 @@ const jogos = {
       concluido: "2026-01-12",
       genero: "Ação/Aventura",
       subgenero: "Shooter de terror em terceira pessoa",
-      tempo: 467,
-      nota: 7.7,
+      tempo: 654,
+      nota: 7.9,
       plataforma: "XBOX One X",
-      conquistas: "27/44"
+      conquistas: "33/44"
     },
     ]
 };
