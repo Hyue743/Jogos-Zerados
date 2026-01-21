@@ -581,7 +581,7 @@ const jogos = {
       conquistas: "3/50"
     },
     {
-      nome: "RE 2 Remake (Leon)",
+      nome: "RE 2 Remake (A/B)",
       lancamento: 2019,
       concluido: "2026-01-12",
       genero: "Ação/Aventura",
@@ -590,6 +590,17 @@ const jogos = {
       nota: 7.9,
       plataforma: "XBOX One X",
       conquistas: "33/44"
+    },
+    {
+      nome: "RE 3 Remake",
+      lancamento: 2020,
+      concluido: "2026-01-20",
+      genero: "Ação",
+      subgenero: "Shooter de terror em terceira pessoa",
+      tempo: 332,
+      nota: 8.5,
+      plataforma: "XBOX One X",
+      conquistas: "23/32"
     },
     ]
 };
