@@ -602,6 +602,17 @@ const jogos = {
       plataforma: "XBOX One X",
       conquistas: "23/32"
     },
+    {
+      nome: "Ryse: Son of Rome",
+      lancamento: 2013,
+      concluido: "2026-01-24",
+      genero: "Aventura",
+      subgenero: "Brawler",
+      tempo: 420,
+      nota: 6,
+      plataforma: "XBOX One X",
+      conquistas: "27/76"
+    },
     ]
 };
   
