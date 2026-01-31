@@ -168,10 +168,10 @@ const jogos = {
         concluido: "2021-09-01",
         genero: "Ação/RPG",
         subgenero: "Roguelite",
-        tempo: 3359,
+        tempo: 3775,
         nota: 9.7,
         plataforma: "XBOX: PC",
-        conquistas: "25/49"
+        conquistas: "28/49"
       },
 ],      
 2022:[
@@ -616,66 +616,78 @@ const jogos = {
     ]
 };
   
-  function renderizarJogos(lista) {
-    const container = document.getElementById("jogosContainer");
-    container.innerHTML = "";
-  
-    lista.forEach(jogo => {
-      const div = document.createElement("div");
-      div.classList.add("jogo");
-  
-      const card = document.createElement("div");
-      card.className = "card";
-  
-      if (jogo.conquistas.includes("/")) {
-        const [feitas, total] = jogo.conquistas.split("/").map(Number);
-        if (feitas === total) {
-          card.classList.add("platinado");
-  
-          const selo = document.createElement("span");
-          selo.classList.add("selo-platina");
-          selo.textContent = "100%";
-          card.appendChild(selo);
-  
-          const trofeu = document.createElement("img");
-          trofeu.src = "imagens/trofeu-platina.png";
-          trofeu.alt = "Troféu de Platina";
-          trofeu.classList.add("trofeu-platina");
-          card.appendChild(trofeu);
-        }
+function renderizarJogos(lista) {
+  const container = document.getElementById("jogosContainer");
+  container.innerHTML = "";
+
+  lista.forEach(jogo => {
+    const div = document.createElement("div");
+    div.classList.add("jogo");
+
+    const card = document.createElement("div");
+    card.className = "card";
+
+    if (jogo.conquistas && jogo.conquistas.includes("/")) {
+      const [feitas, total] = jogo.conquistas.split("/").map(n => Number(String(n).trim()));
+      if (Number.isFinite(feitas) && Number.isFinite(total) && total > 0 && feitas === total) {
+        card.classList.add("platinado");
+
+        const selo = document.createElement("span");
+        selo.classList.add("selo-platina");
+        selo.textContent = "100%";
+        card.appendChild(selo);
+
+        const trofeu = document.createElement("img");
+        trofeu.src = "imagens/trofeu-platina.png";
+        trofeu.alt = "Troféu de Platina";
+        trofeu.classList.add("trofeu-platina");
+        card.appendChild(trofeu);
       }
-  
-      const titulo = document.createElement("h3");
-      titulo.textContent = jogo.nome;
-      card.appendChild(titulo);
-  
-      const detalhes = [
-        ["Data de Lançamento", jogo.lancamento],
-        ["Concluído em", jogo.concluido],
-        ["Gênero", `${jogo.genero} - ${jogo.subgenero}`],
-        ["Tempo", `${jogo.tempo} min`],        
-        ["Nota", jogo.nota],
-        ["Plataforma", jogo.plataforma],
-        ["Conquistas", jogo.conquistas]
-      ];
-  
-      detalhes.forEach(([label, valor]) => {
-        const p = document.createElement("p");
-        p.innerHTML = `<strong>${label}:</strong> ${valor}`;
-        card.appendChild(p);
-      });
-  
-      div.appendChild(card);
-      container.appendChild(div);
-    });
-  }
+    }
+
+    const titulo = document.createElement("h3");
+    titulo.textContent = jogo.nome;
+    card.appendChild(titulo);
+
+    const detalhes = [
+      ["Data de Lançamento", jogo.lancamento],
+      ["Concluído em", jogo.concluido],
+      ["Gênero", `${jogo.genero} - ${jogo.subgenero}`],
+      ["Tempo", `${jogo.tempo} min`],
+      ["Nota", jogo.nota],
+      ["Plataforma", jogo.plataforma],
+      ["Conquistas", jogo.conquistas]
+    ];
+
+    detalhes.forEach(([label, valor]) => {
+      const p = document.createElement("p");
+      p.innerHTML = `<strong>${label}:</strong> ${valor}`;
+      card.appendChild(p);
+    });
+
+    div.appendChild(card);
+    container.appendChild(div);
+  });
+}
+
+function isPlatinado(conquistas) {
+  if (!conquistas) return false;
+  const m = String(conquistas).trim().match(/^(\d+)\s*\/\s*(\d+)$/);
+  if (!m) return false;
+
+  const atual = parseInt(m[1], 10);
+  const total = parseInt(m[2], 10);
+
+  if (!Number.isFinite(atual) || !Number.isFinite(total) || total <= 0) return false;
+
+  return atual === total;
+}
+
 function filtrarJogos() {
   const anoSelecionado = document.getElementById("filtroLancamento").value;
   const nota = document.getElementById("filtroNota").value;
   const tempo = document.getElementById("filtroTempo").value;
-  const jogosContainer = document.getElementById("jogosContainer");
-
-  jogosContainer.innerHTML = ""; 
+  const platina = document.getElementById("filtroPlatina").value;
 
   let filtrados = [];
 
@@ -687,83 +699,104 @@ function filtrarJogos() {
     filtrados = jogos[anoSelecionado] || [];
   }
 
-  if (nota !== "todas") {
-    const notaMin = parseFloat(nota);
-    filtrados = filtrados.filter(j => Number(j.nota.toFixed(2)) === Number(notaMin.toFixed(2)));
+if (nota !== "todas") {
+  const notaSel = Number(nota);
+  filtrados = filtrados.filter(j => Number(j.nota.toFixed(1)) === Number(notaSel.toFixed(1)));
+}
+
+
+  if (platina === "sim") {
+    filtrados = filtrados.filter(j => isPlatinado(j.conquistas));
+  } else if (platina === "nao") {
+    filtrados = filtrados.filter(j => !isPlatinado(j.conquistas));
   }
+  // se for "todos", não filtra nada
 
   if (tempo === "curto") {
-    filtrados.sort((a, b) => a.tempo - b.tempo);
+    filtrados = [...filtrados].sort((a, b) => a.tempo - b.tempo);
   } else if (tempo === "longo") {
-    filtrados.sort((a, b) => b.tempo - a.tempo);
+    filtrados = [...filtrados].sort((a, b) => b.tempo - a.tempo);
   }
 
   renderizarJogos(filtrados);
 }
-  
-  document.getElementById("filtroLancamento").addEventListener("change", filtrarJogos);
-  document.getElementById("filtroNota").addEventListener("change", filtrarJogos);
-  document.getElementById("filtroTempo").addEventListener("change", filtrarJogos);
-  
-  document.getElementById("adicionarJogo").addEventListener("submit", e => {
-    e.preventDefault();
-  
-    const nome = document.getElementById("nome").value;
-    const lancamento = parseInt(document.getElementById("lancamento").value);
-    const concluido = document.getElementById("concluido").value;
-    const genero = document.getElementById("genero").value;
-    const subgenero = document.getElementById("subgenero").value;
-    const tempo = parseInt(document.getElementById("tempo").value);
-    const nota = parseFloat(document.getElementById("nota").value);
-    const plataforma = document.getElementById("plataforma").value;
-    const conquistas = document.getElementById("conquistas").value;
-  
-    jogos.push({
-      nome,
-      lancamento,
-      concluido,
-      genero,
-      subgenero,
-      tempo,
-      nota,
-      plataforma,
-      conquistas
-    });
-  
-    document.getElementById("adicionarJogo").reset();
-    filtrarJogos();
-  });
-function popularFiltroNota() {
-    const filtro = document.getElementById("filtroNota");
-    let notasUnicas = new Set();
 
-    for (const ano in jogos) {
-        jogos[ano].forEach(jogo => notasUnicas.add(jogo.nota));
-    }
+document.getElementById("filtroLancamento").addEventListener("change", filtrarJogos);
+document.getElementById("filtroNota").addEventListener("change", filtrarJogos);
+document.getElementById("filtroTempo").addEventListener("change", filtrarJogos);
+document.getElementById("filtroPlatina").addEventListener("change", filtrarJogos);
 
-    const notasOrdenadas = [...notasUnicas].sort((a, b) => b - a);
-    filtro.innerHTML = '<option value="todas">Todas</option>';
+document.getElementById("adicionarJogo").addEventListener("submit", e => {
+  e.preventDefault();
 
-    notasOrdenadas.forEach(nota => {
-        const option = document.createElement("option");
-        option.value = nota;
-        option.textContent = nota;
-        filtro.appendChild(option);
-    });
-}
-function popularFiltroLancamento() {
-    const filtro = document.getElementById("filtroLancamento");
-    const anosUnicos = Object.keys(jogos).sort((a, b) => b - a);
+  const nome = document.getElementById("nome").value;
+  const lancamento = parseInt(document.getElementById("lancamento").value);
+  const concluido = document.getElementById("concluido").value;
+  const genero = document.getElementById("genero").value;
+  const subgenero = document.getElementById("subgenero").value;
+  const tempo = parseInt(document.getElementById("tempo").value);
+  const nota = parseFloat(document.getElementById("nota").value);
+  const plataforma = document.getElementById("plataforma").value;
+  const conquistas = document.getElementById("conquistas").value;
 
-    filtro.innerHTML = '<option value="todos">Todos</option>';
-    anosUnicos.forEach(ano => {
-        const option = document.createElement("option");
-        option.value = ano;
-        option.textContent = ano;
-        filtro.appendChild(option);
-    });
-}
-  
+  const jogoNovo = {
+    nome,
+    lancamento,
+    concluido,
+    genero,
+    subgenero,
+    tempo,
+    nota,
+    plataforma,
+    conquistas
+  };
+
+  const anoConclusao = concluido ? concluido.slice(0, 4) : String(new Date().getFullYear());
+
+  if (!jogos[anoConclusao]) jogos[anoConclusao] = [];
+  jogos[anoConclusao].push(jogoNovo);
+
+  document.getElementById("adicionarJogo").reset();
+
   popularFiltroLancamento();
   popularFiltroNota();
-  renderizarJogos(jogos[2026]); // Mostra os jogos de 2026 ao carregar a página;
+
+  filtrarJogos();
+});
+
+function popularFiltroNota() {
+  const filtro = document.getElementById("filtroNota");
+  let notasUnicas = new Set();
+
+  for (const ano in jogos) {
+    (jogos[ano] || []).forEach(jogo => notasUnicas.add(jogo.nota));
+  }
+
+  const notasOrdenadas = [...notasUnicas].sort((a, b) => b - a);
+  filtro.innerHTML = '<option value="todas">Todas</option>';
+
+  notasOrdenadas.forEach(nota => {
+    const option = document.createElement("option");
+    option.value = nota;
+    option.textContent = nota;
+    filtro.appendChild(option);
+  });
+}
+
+function popularFiltroLancamento() {
+  const filtro = document.getElementById("filtroLancamento");
+  const anosUnicos = Object.keys(jogos).sort((a, b) => b - a);
+
+  filtro.innerHTML = '<option value="todos">Todos</option>';
+  anosUnicos.forEach(ano => {
+    const option = document.createElement("option");
+    option.value = ano;
+    option.textContent = ano;
+    filtro.appendChild(option);
+  });
+}
+
+popularFiltroLancamento();
+popularFiltroNota();
+renderizarJogos(jogos[2026]);
+ // Mostra os jogos de 2026 ao carregar a página;
