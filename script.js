@@ -600,7 +600,7 @@ const jogos = {
       tempo: 332,
       nota: 8.5,
       plataforma: "XBOX One X",
-      conquistas: "23/32"
+      conquistas: "32/32"
     },
     {
       nome: "Ryse: Son of Rome",
