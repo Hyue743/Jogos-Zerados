@@ -577,7 +577,7 @@ const jogos = {
       subgenero: "Luta 2.5D",
       tempo: 386,
       nota: 6.5,
-      plataforma: "Steam Deck (nuvem)",
+      plataforma: "Xbox: Steam Deck (nuvem)",
       conquistas: "3/50"
     },
     {
@@ -597,7 +597,7 @@ const jogos = {
       concluido: "2026-01-20",
       genero: "Ação",
       subgenero: "Shooter de terror em terceira pessoa",
-      tempo: 332,
+      tempo: 1308,
       nota: 8.5,
       plataforma: "XBOX One X",
       conquistas: "32/32"
@@ -612,6 +612,17 @@ const jogos = {
       nota: 6,
       plataforma: "XBOX One X",
       conquistas: "27/76"
+    },
+    {
+      nome: "Indika",
+      lancamento: 2024,
+      concluido: "2026-02-02",
+      genero: "Aventura",
+      subgenero: "Puzzle Narrativo Psicológico",
+      tempo: 255,
+      nota: 7.5,
+      plataforma: "Xbox: Steam Deck (nuvem)",
+      conquistas: "16/16"
     },
     ]
 };
