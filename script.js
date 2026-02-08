@@ -624,6 +624,17 @@ const jogos = {
       plataforma: "Xbox: Steam Deck (nuvem)",
       conquistas: "16/16"
     },
+    {
+      nome: "Ball x Pit",
+      lancamento: 2025,
+      concluido: "2026-02-08",
+      genero: "Arcade",
+      subgenero: "Shooter Roguelite",
+      tempo: 1541,
+      nota: 9,
+      plataforma: "Xbox: PC/Steam Deck (nuvem)",
+      conquistas: "39/63"
+    },
     ]
 };
   
