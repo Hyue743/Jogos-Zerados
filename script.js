@@ -627,13 +627,13 @@ const jogos = {
     {
       nome: "Ball x Pit",
       lancamento: 2025,
-      concluido: "2026-02-10",
+      concluido: "2026-02-12",
       genero: "Arcade",
       subgenero: "Shooter Roguelite",
-      tempo: 1699,
+      tempo: 1981,
       nota: 9,
       plataforma: "Xbox: PC/Steam Deck (nuvem)",
-      conquistas: "48/63"
+      conquistas: "63/63"
     },
     ]
 };
