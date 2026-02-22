@@ -635,6 +635,17 @@ const jogos = {
       plataforma: "Xbox: PC/Steam Deck (nuvem)",
       conquistas: "63/63"
     },
+    {
+      nome: "A Way Out",
+      lancamento: 2018,
+      concluido: "2026-02-22",
+      genero: "Ação/Aventura",
+      subgenero: "Narrativo",
+      tempo: 370,
+      nota: 8,
+      plataforma: "Xbox One X",
+      conquistas: "3/14"
+    },
     ]
 };
   
