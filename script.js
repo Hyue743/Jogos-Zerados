@@ -646,6 +646,17 @@ const jogos = {
       plataforma: "Xbox One X",
       conquistas: "3/14"
     },
+    {
+      nome: "Avowed",
+      lancamento: 2025,
+      concluido: "2026-02-24",
+      genero: "RPG",
+      subgenero: "Mundo semiaberto",
+      tempo: 2353,
+      nota: 7,
+      plataforma: "Xbox: Steam Deck (nuvem)",
+      conquistas: "18/50"
+    },
     ]
 };
   
