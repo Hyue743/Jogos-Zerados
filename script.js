@@ -657,6 +657,17 @@ const jogos = {
       plataforma: "Xbox: Steam Deck (nuvem)",
       conquistas: "18/50"
     },
+    {
+      nome: "FF Pixel Remaster",
+      lancamento: 2021,
+      concluido: "2026-03-10",
+      genero: "RPG",
+      subgenero: "JRPG de turno",
+      tempo: 693,
+      nota: 7.5,
+      plataforma: "Xbox: Steam Deck (nuvem)",
+      conquistas: "23/23"
+    },
     ]
 };
   
