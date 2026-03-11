@@ -668,6 +668,17 @@ const jogos = {
       plataforma: "Xbox: Steam Deck (nuvem)",
       conquistas: "23/23"
     },
+    {
+      nome: "Dead Space",
+      lancamento: 2008,
+      concluido: "2026-03-11",
+      genero: "Terror",
+      subgenero: "Shooter de terror em terceira pessoa",
+      tempo: 715,
+      nota: 9.2,
+      plataforma: "Xbox One X",
+      conquistas: "30/48"
+    },
     ]
 };
   
