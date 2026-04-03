@@ -679,6 +679,17 @@ const jogos = {
       plataforma: "Xbox One X",
       conquistas: "30/48"
     },
+    {
+      nome: "Teenage Mutant Ninja Turtles: Shredder's Revenge",
+      lancamento: 2022,
+      concluido: "2026-04-02",
+      genero: "Ação",
+      subgenero: "Beat ’em up",
+      tempo: 360,
+      nota: 5.5,
+      plataforma: "Xbox One X",
+      conquistas: "16/30"
+    },
     ]
 };
   
