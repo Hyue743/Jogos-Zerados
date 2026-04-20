@@ -690,6 +690,17 @@ const jogos = {
       plataforma: "Xbox One X",
       conquistas: "16/30"
     },
+    {
+      nome: "RE 7: Biohazard",
+      lancamento: 2017,
+      concluido: "2026-04-19",
+      genero: "Terror",
+      subgenero: "Shooter de terror em primeira pessoa",
+      tempo: 563,
+      nota: 6.6,
+      plataforma: "Xbox One X",
+      conquistas: "25/58"
+    },
     ]
 };
   
