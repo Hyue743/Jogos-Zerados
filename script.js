@@ -702,7 +702,7 @@ const jogos = {
       conquistas: "26/58"
     },
     {
-      nome: "WolfWolfenstein: The Old Blood",
+      nome: "Wolfenstein: The Old Blood",
       lancamento: 2015,
       concluido: "2026-05-10",
       genero: "Ação",
