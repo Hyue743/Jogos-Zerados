@@ -712,6 +712,17 @@ const jogos = {
       plataforma: "Xbox One X",
       conquistas: "17/50"
     },
+    {
+      nome: "Hades II",
+      lancamento: 2025,
+      concluido: "2026-05-19",
+      genero: "Ação",
+      subgenero: "Roguelite",
+      tempo: 2727,
+      nota: 9.1,
+      plataforma: "Xbox:PC",
+      conquistas: "23/49"
+    },
     ]
 };
   
