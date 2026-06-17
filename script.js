@@ -119,6 +119,17 @@ const jogos = {
 ],
 2021: [
      {
+        nome: "eFootball PES 2020",
+        lancamento: 2019,
+        concluido: "2021-02-26",
+        genero: "Esporte",
+        subgenero: "Futebol",
+        tempo: 17436,
+        nota: 9,
+        plataforma: "Steam: PC",
+        conquistas: "N/A"
+      },
+     {
         nome: "The Medium",
         lancamento: 2021,
         concluido: "2021-02-15",
@@ -175,6 +186,28 @@ const jogos = {
       },
 ],      
 2022:[
+     {
+        nome: "Dead by Daylight",
+        lancamento: 2016,
+        concluido: "2022-02-20",
+        genero: "Terror",
+        subgenero: "Multiplayer assimétrico",
+        tempo: 20784,
+        nota: 8,
+        plataforma: "XBOX: PC",
+        conquistas: "85/296"
+      },
+      {
+        nome: "eFootball PES 2021 SEASON UPDATE",
+        lancamento: 2020,
+        concluido: "2022-02-26",
+        genero: "Esporte",
+        subgenero: "Futebol",
+        tempo: 65634,
+        nota: 9,
+        plataforma: "Steam: PC",
+        conquistas: "N/A"
+      },
      {
         nome: "Dragon Quest XI S: Echos of an Elusive Age - Definitive Edition",
         lancamento: 2019,
@@ -256,6 +289,17 @@ const jogos = {
         plataforma: "Switch: Steam Deck",
         conquistas: "NA"
       },
+      {
+      nome: "EA SPORTS FIFA 23",
+      lancamento: 2022,
+      concluido: "2024-05-18",
+      genero: "Esporte",
+      subgenero: "Futebol",
+      tempo: 16968,
+      nota: 7.5,
+      plataforma: "Steam: PC",
+      conquistas: "14/39"
+    },
       {
         nome: "Senua’s Saga: Hellblade II",
         lancamento: 2024,
