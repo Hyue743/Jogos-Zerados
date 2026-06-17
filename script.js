@@ -715,13 +715,13 @@ const jogos = {
     {
       nome: "Hades II",
       lancamento: 2025,
-      concluido: "2026-05-19",
+      concluido: "2026-06-17",
       genero: "Ação",
       subgenero: "Roguelite",
-      tempo: 2727,
+      tempo: 5742,
       nota: 9.1,
       plataforma: "Xbox:PC",
-      conquistas: "23/49"
+      conquistas: "49/49"
     },
     ]
 };
