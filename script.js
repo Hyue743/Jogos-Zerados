@@ -469,6 +469,17 @@ const jogos = {
       conquistas: "14/31"
     },
     {
+        nome: "Forza Horizon 5",
+        lancamento: 2021,
+        concluido: "2025-05-19",
+        genero: "Corrida",
+        subgenero: "Mundo aberto/Arcade de simulação",
+        tempo: 7413,
+        nota: 9.2,
+        plataforma: "XBOX: One X e PC",
+        conquistas: "39/164"
+      },
+    {
       nome: "Asura's Wrath",
       lancamento: 2012,
       concluido: "2025-05-25",
@@ -766,6 +777,17 @@ const jogos = {
       nota: 9.1,
       plataforma: "Xbox:PC",
       conquistas: "49/49"
+    },
+    {
+      nome: "Lichdom: Battlemage",
+      lancamento: 2014,
+      concluido: "2026-06-22",
+      genero: "Ação",
+      subgenero: "FPS",
+      tempo: 780,
+      nota: 4,
+      plataforma: "Xbox One X",
+      conquistas: "12/39"
     },
     ]
 };
