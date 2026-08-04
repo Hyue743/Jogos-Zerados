@@ -789,6 +789,17 @@ const jogos = {
       plataforma: "Xbox One X",
       conquistas: "12/39"
     },
+    {
+      nome: "God of War",
+      lancamento: 2018,
+      concluido: "2026-08-03",
+      genero: "Ação/Aventura",
+      subgenero: "Hack and Slash",
+      tempo: 1374,
+      nota: 8,
+      plataforma: "Steam: PC",
+      conquistas: "16/37"
+    },
     ]
 };
   
