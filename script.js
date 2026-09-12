@@ -653,7 +653,7 @@ const jogos = {
       genero: "Ação",
       subgenero: "Shooter de terror em terceira pessoa",
       tempo: 1308,
-      nota: 8.5,
+      nota: 9,
       plataforma: "XBOX One X",
       conquistas: "32/32"
     },
@@ -799,6 +799,17 @@ const jogos = {
       nota: 8,
       plataforma: "Steam: PC",
       conquistas: "16/37"
+    },
+    {
+      nome: "RE4R",
+      lancamento: 2023,
+      concluido: "2026-09-11",
+      genero: "Ação/Aventura",
+      subgenero: "Shooter de terror em terceira pessoa",
+      tempo: 875,
+      nota: 8,
+      plataforma: "Steam: PC",
+      conquistas: "15/39"
     },
     ]
 };
