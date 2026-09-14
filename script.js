@@ -811,6 +811,17 @@ const jogos = {
       plataforma: "Steam: PC",
       conquistas: "15/39"
     },
+    {
+      nome: "Cave Bad",
+      lancamento: 2021,
+      concluido: "2026-09-13",
+      genero: "Roguelike",
+      subgenero: "Dungeon Crawler",
+      tempo: 40,
+      nota: 6.1,
+      plataforma: "Xbox One X",
+      conquistas: "24/30"
+    },
     ]
 };
   
