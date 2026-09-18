@@ -801,15 +801,15 @@ const jogos = {
       conquistas: "16/37"
     },
     {
-      nome: "RE4R",
+      nome: "RE4R+SW",
       lancamento: 2023,
-      concluido: "2026-09-11",
+      concluido: "2026-09-18",
       genero: "Ação/Aventura",
       subgenero: "Shooter de terror em terceira pessoa",
-      tempo: 875,
-      nota: 8,
+      tempo: 1166,
+      nota: 8.5,
       plataforma: "Steam: PC",
-      conquistas: "15/39"
+      conquistas: "19/46"
     },
     {
       nome: "Cave Bad",
