@@ -822,6 +822,17 @@ const jogos = {
       plataforma: "Xbox One X",
       conquistas: "24/30"
     },
+    {
+      nome: "Blue Dragon",
+      lancamento: 2006,
+      concluido: "2026-10-09",
+      genero: "RPG",
+      subgenero: "JRPG de turnos",
+      tempo: 3450,
+      nota: 8,
+      plataforma: "Xbox One X",
+      conquistas: "11/46"
+    },
     ]
 };
   
