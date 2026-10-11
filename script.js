@@ -833,6 +833,17 @@ const jogos = {
       plataforma: "Xbox One X",
       conquistas: "11/46"
     },
+    {
+      nome: "The Life and Suffering of Sir Brante",
+      lancamento: 2021,
+      concluido: "2026-10-11",
+      genero: "RPG",
+      subgenero: "RPG narrativo",
+      tempo: 1050,
+      nota: 9,
+      plataforma: "PC/Steam Deck",
+      conquistas: "22/89"
+    },
     ]
 };
   
