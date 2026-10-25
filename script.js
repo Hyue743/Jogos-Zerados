@@ -844,6 +844,17 @@ const jogos = {
       plataforma: "PC/Steam Deck",
       conquistas: "22/89"
     },
+    {
+      nome: "RE 5",
+      lancamento: 2016,
+      concluido: "2026-10-24",
+      genero: "Ação",
+      subgenero: "Shooter de terror em terceira pessoa",
+      tempo: 570,
+      nota: 8,
+      plataforma: "Xbox One X",
+      conquistas: "22/70"
+    },
     ]
 };
   
