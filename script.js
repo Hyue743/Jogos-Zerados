@@ -855,6 +855,17 @@ const jogos = {
       plataforma: "Xbox One X",
       conquistas: "22/70"
     },
+    {
+      nome: "FH 6",
+      lancamento: 2026,
+      concluido: "2026-10-25",
+      genero: "Corrida",
+      subgenero: "Arcade de mundo aberto",
+      tempo: 6999,
+      nota: 10,
+      plataforma: "Xbox: PC",
+      conquistas: "57/57"
+    },
     ]
 };
   
