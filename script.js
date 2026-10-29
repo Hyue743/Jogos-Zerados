@@ -866,6 +866,17 @@ const jogos = {
       plataforma: "Xbox: PC",
       conquistas: "57/57"
     },
+    {
+      nome: "Limbo",
+      lancamento: 2010,
+      concluido: "2026-10-29",
+      genero: "Aventura",
+      subgenero: "Puzzle Plataforma",
+      tempo: 212,
+      nota: 8,
+      plataforma: "Xbox: PC",
+      conquistas: "8/13"
+    },
     ]
 };
   
