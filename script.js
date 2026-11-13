@@ -853,7 +853,7 @@ const jogos = {
       tempo: 570,
       nota: 8,
       plataforma: "Xbox One X",
-      conquistas: "22/70"
+      conquistas: "39/70"
     },
     {
       nome: "FH 6",
@@ -875,7 +875,7 @@ const jogos = {
       tempo: 212,
       nota: 8,
       plataforma: "Xbox: PC",
-      conquistas: "8/13"
+      conquistas: "11/13"
     },
     {
       nome: "Tunic",
