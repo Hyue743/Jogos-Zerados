@@ -877,6 +877,17 @@ const jogos = {
       plataforma: "Xbox: PC",
       conquistas: "8/13"
     },
+    {
+      nome: "Tunic",
+      lancamento: 2022,
+      concluido: "2026-11-13",
+      genero: "Ação/Aventura",
+      subgenero: "Puzzle",
+      tempo: 328,
+      nota: 9,
+      plataforma: "Xbox: PC",
+      conquistas: "36/36"
+    },
     ]
 };
   
